@@ -162,6 +162,7 @@ let gameOver = false
       if (serpent[0].x === serpent[i].x  && serpent[0].y === serpent[i].y ) {
         clearInterval(jeuxinterval);
         gameOver = true
+        document.querySelector(".gameOver").style.display = "block";
       }
     }
   }
