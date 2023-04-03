@@ -193,7 +193,7 @@ let gameOver = false
         console.log(coordooneFood)
         ctx.clearRect(coordooneFood[0].x, coordooneFood[0].y, 20, 20);
         point += 20 
-        elPoint.textContent = point + " :Points"
+        elPoint.textContent = point + " :"
         let dernierSegment = serpent.length -1;
         serpent.push(dernierSegment)
        
