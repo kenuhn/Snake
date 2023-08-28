@@ -26,6 +26,13 @@ let gameOver = false
     jeuxinterval = setInterval(gameLoop, 100);
   }
 
+
+const button = document.querySelector(".button");
+console.log(button)
+button.addEventListener("click", (e) => {
+  location.reload()
+})
+
   function dessine(positionX, positionY, color) {
     ctx.beginPath();
     ctx.fillStyle = color ;
@@ -193,7 +200,7 @@ let gameOver = false
         console.log(coordooneFood)
         ctx.clearRect(coordooneFood[0].x, coordooneFood[0].y, 20, 20);
         point += 20 
-        elPoint.textContent = point + " :"
+        elPoint.textContent = point 
         let dernierSegment = serpent.length -1;
         serpent.push(dernierSegment)
        
